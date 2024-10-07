@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,26 @@
             <div class="login-logo">
                 <img src="img/logo-magelo.PNG" alt="logotipo">
             </div>
-                <form>
+                <form id="loginForm">
                     <div class="input-group">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="usuário" required>
+                        <input type="text" id="usuario" placeholder="usuário" required>
+                        <span class="error-message" id="usuarioError"></span> <!-- Área para a mensagem de erro -->
                     </div>
                     
                     <div class="input-group">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="palavra-passe" required>
+                        <input type="password" id="senha" placeholder="palavra-passe" required>
+                        <span class="error-message" id="senhaError"></span> <!-- Área para a mensagem de erro -->
                     </div>
 
-                    <div class="forgot-password">
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
                     
                     <button type="submit" class="login-button">ENTRAR</button>
                 </form>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

@@ -97,3 +97,13 @@ body {
     background-color: #333333;
 }
 
+.error-message {
+    position: absolute;
+    color: red;
+    font-size: 0.8em;
+    display: none;
+    top: 270%;
+    left: 0;
+  }
+  
+
