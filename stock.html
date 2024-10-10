@@ -14,18 +14,15 @@
   <body>
     <div class="admin-header">
       <div class="logo">
-        <img
-          src="C:\Users\hp\Documents\projecto fabrica de gelo\img\logo.PNG"
-          alt="Logo Magelo Fábrica de Gelo"
-        />
+        <img src="img/logo-magelo.PNG" alt="Logo Magelo Fábrica de Gelo" />
       </div>
       <div class="user-info">
         <i class="fas fa-user"></i>
-        <span id="user-name">Funcionário</span>
+        <span id="user-name"></span>
         <i class="fas fa-chevron-down arrow"></i>
         <ul class="dropdown-menu">
           <li>
-            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
           </li>
         </ul>
       </div>
@@ -33,14 +30,13 @@
 
     <div class="main-container">
       <h1>Adicionar Stock de Produtos</h1>
-
-      <!-- Formulário para Adicionar Stock -->
       <div class="form-container">
         <form id="stockForm">
           <h2>Registrar Produção de Gelo</h2>
-
+          <br />
           <div class="form-group">
             <label for="produto">Tipo de Produto:</label>
+            <br />
             <select id="produto" name="produto" style="width: 150px" required>
               <option value="cubo">Gelo em Cubo</option>
               <option value="barra">Gelo em Barra</option>
@@ -48,7 +44,9 @@
           </div>
 
           <div class="form-group">
-            <label for="quantidade-producao">Quantidade Produzida (Kg):</label>
+            <label for="quantidade-producao"
+              >Quantidade Produzida (unidades):</label
+            >
             <input
               type="number"
               id="quantidade-producao"
@@ -70,12 +68,10 @@
         <thead>
           <tr>
             <th>Produto</th>
-            <th>Quantidade (Kg)</th>
+            <th>Quantidade (unidades)</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- O stock será listado aqui -->
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
 
@@ -117,12 +113,14 @@
 
           row.innerHTML = `
                     <td>${item.produto}</td>
-                    <td>${item.quantidade} Kg</td>
+                    <td>${item.quantidade} unidades</td>
                 `;
 
           stockTableBody.appendChild(row);
         });
       }
     </script>
+
+    <button class="btn-voltar">Voltar</button>
   </body>
 </html>

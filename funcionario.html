@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Funcionários - Magelo Fábrica de Gelo</title>
+    <link rel="stylesheet" href="css/funcionario.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="admin-header">
+      <div class="logo">
+        <img src="img/logo-magelo.PNG" alt="Logo Magelo Fábrica de Gelo" />
+      </div>
+      <div class="user-info">
+        <i class="fas fa-user"></i>
+        <span id="user-name"></span>
+        <i class="fas fa-chevron-down arrow"></i>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal do CRUD -->
+    <div class="main-container">
+      <h1>Gestão de Funcionários</h1>
+
+      <!-- Botão de Adicionar Funcionário -->
+      <button id="addEmployeeBtn" class="btn add-btn">
+        <i class="fas fa-plus"></i> Adicionar Funcionário
+      </button>
+
+      <!-- Tabela de Funcionários -->
+      <table class="employee-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Departamento</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Lista de funcionários será carregada aqui -->
+        </tbody>
+      </table>
+
+      <!-- Formulário de Adição/Atualização de Funcionários -->
+      <div class="form-container" id="employeeFormContainer">
+        <form id="employeeForm">
+          <h2 id="formTitle">Adicionar Funcionário</h2>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="position">Cargo:</label>
+          <input type="text" id="position" name="position" required />
+
+          <label for="department">Departamento:</label>
+          <input type="text" id="department" name="department" required />
+
+          <button type="submit" class="btn save-btn">Salvar</button>
+          <button type="button" class="btn cancel-btn" id="cancelFormBtn">
+            Cancelar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <button class="btn-voltar">Voltar</button>
+  </body>
+</html>

@@ -30,7 +30,6 @@
     <div class="main-container">
       <h1>Pedidos de Gelo</h1>
 
-      <!-- Formulário de Pedido -->
       <div class="form-container">
         <form id="pedidoForm">
           <h2>Fazer Pedido</h2>
@@ -46,19 +45,21 @@
             required
           />
 
-          <label for="quantidade">Quantidade de Gelo (Kg):</label>
+          <label for="quantidade">Quantidade de Gelo (unidades):</label>
           <input
             type="number"
             id="quantidade"
             name="quantidade"
-            style="width: 100px"
+            style="width: 100px; height: 30px"
             required
           />
-          <!-- Aumentado o tamanho -->
-
           <label for="tipo-gelo">Tipo de Gelo:</label>
-          <select id="tipo-gelo" name="tipo-gelo" style="width: 150px" required>
-            <!-- Aumentado o tamanho -->
+          <select
+            id="tipo-gelo"
+            name="tipo-gelo"
+            style="width: 150px; height: 30px"
+            required
+          >
             <option value="cubo">Cubo</option>
             <option value="barra">Barra</option>
           </select>
@@ -76,8 +77,6 @@
           </div>
         </form>
       </div>
-
-      <!-- Tabela de Pedidos -->
       <h2>Lista de Pedidos</h2>
       <table class="employee-table" id="pedido-table">
         <thead>
@@ -190,5 +189,7 @@
         renderPedidoTable();
       }
     </script>
+
+    <button class="btn-voltar">Voltar</button>
   </body>
 </html>

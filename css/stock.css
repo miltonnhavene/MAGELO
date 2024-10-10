@@ -7,7 +7,6 @@
 
 body {
     background: linear-gradient(135deg, #f0f2f5, #e6e9ef);
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
