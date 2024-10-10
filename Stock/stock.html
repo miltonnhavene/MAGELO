@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adicionar Stock - Magelo Fábrica de Gelo</title>
-    <link rel="stylesheet" href="css/stock.css" />
-    <!-- Use o mesmo arquivo de estilos das outras páginas -->
+    <link rel="stylesheet" href="stock.css" />
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
@@ -14,7 +13,7 @@
   <body>
     <div class="admin-header">
       <div class="logo">
-        <img src="img/logo-magelo.PNG" alt="Logo Magelo Fábrica de Gelo" />
+        <img src="../img/logo-magelo.PNG" alt="Logo Magelo Fábrica de Gelo" />
       </div>
       <div class="user-info">
         <i class="fas fa-user"></i>
@@ -22,7 +21,9 @@
         <i class="fas fa-chevron-down arrow"></i>
         <ul class="dropdown-menu">
           <li>
-            <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="../index.html"
+              ><i class="fas fa-sign-out-alt"></i> Logout</a
+            >
           </li>
         </ul>
       </div>
@@ -62,7 +63,6 @@
         </form>
       </div>
 
-      <!-- Tabela de Stock -->
       <h2>Stock Atual</h2>
       <table class="employee-table" id="stock-table">
         <thead>
